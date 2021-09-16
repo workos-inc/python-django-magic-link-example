@@ -29,7 +29,6 @@ def callback(request):
 
 def passwordless_auth(request):
     email = request.POST['email']
-    print('email', email, type(email))
 
     session = workos_client.passwordless.create_session(
       {'email': email, 'type': 'MagicLink'}
@@ -44,9 +43,6 @@ def passwordless_auth(request):
 
 
 def success(request):
-    print('hit the success route')
-    print('this is request', request)
-    print('this is the third one',request.GET['code'])
 
     code = request.GET['code']
     profile = workos.client.sso.get_profile_and_token(code)
