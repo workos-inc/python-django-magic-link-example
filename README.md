@@ -49,7 +49,7 @@ A basic Django app that uses the [WorkOS Python SDK](https://github.com/workos-i
 
 6. Obtain and make note of the following values. In the next step, these will be set as environment variables.
    - Your [WORKOS_API_KEY](https://dashboard.workos.com/api-keys)
-   - Your `WORKOS_PROJECT_ID`, in the format `client_<random-alphanumeric-string>`, retrievable from WorkOS dashboard under Configuration.
+   - Your `WORKOS_CLIENT_ID`, in the format `client_<random-alphanumeric-string>`, retrievable from WorkOS dashboard under Configuration.
 
 7. Ensure you're in the root app directory for the example app, `magic_link_example/` where the `manage.py` file resides. Create a `.env` file to securely store the environment variables. Open this file with the Nano text editor. (This file is listed in this repo's `.gitignore` file, so your sensitive information will not be checked into version control.)
    ```bash
@@ -60,7 +60,7 @@ A basic Django app that uses the [WorkOS Python SDK](https://github.com/workos-i
 8. Once the Nano text editor opens, you can directly edit the `.env` file by listing the environment variables:
       ```bash
     export WORKOS_API_KEY=<value found in step 6>
-    export WORKOS_PROJECT_ID=<value found in step 6>
+    export WORKOS_CLIENT_ID=<value found in step 6>
     ```
 
     To exit the Nano text editor, type `CTRL + x`. When prompted to "Save modified buffer", type `Y`, then press the `Enter` or `Return` key.
@@ -73,7 +73,7 @@ A basic Django app that uses the [WorkOS Python SDK](https://github.com/workos-i
    You can ensure the environment variables were set correctly by running the following commands. The output should match the corresponding values.
    ```bash
    (env) $ echo $WORKOS_API_KEY
-   (env) $ echo $WORKOS_PROJECT_ID
+   (env) $ echo $WORKOS_CLIENT_ID
    ```
 
 10. Run the Django migrations. Again, ensure you're in the `magic_link_example/` directory where the `manange.py` file is.
