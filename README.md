@@ -18,7 +18,7 @@ A basic Django app that uses the [WorkOS Python SDK](https://github.com/workos-i
    $ git clone https://github.com/workos-inc/python-django-magic-link-example.git
    ```
 
-  or
+   or
 
    ```bash
    # SSH
@@ -57,8 +57,8 @@ A basic Django app that uses the [WorkOS Python SDK](https://github.com/workos-i
    (env) $ nano .env
    ```
 
- 8. Once the Nano text editor opens, you can directly edit the `.env` file by listing the environment variables:
-    ```bash
+8. Once the Nano text editor opens, you can directly edit the `.env` file by listing the environment variables:
+      ```bash
     export WORKOS_API_KEY=<value found in step 6>
     export WORKOS_PROJECT_ID=<value found in step 6>
     ```
@@ -94,9 +94,7 @@ A basic Django app that uses the [WorkOS Python SDK](https://github.com/workos-i
 ## Start the server
 
 11. Start the server.
-  ```bash
-  (env) $ python3 manage.py runserver
-  ```
+  
   To serve static files in development while still having `debug=True` in settings.py to able to send requests to WorkOS, be sure to include the `--insecure` flag when starting the server locally.
   ```bash
   (env) $ python3 manage.py runserver --insecure
