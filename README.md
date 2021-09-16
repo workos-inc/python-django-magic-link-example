@@ -73,10 +73,10 @@ A basic Django app that uses the [WorkOS Python SDK](https://github.com/workos-i
    You can ensure the environment variables were set correctly by running the following commands. The output should match the corresponding values.
    ```bash
    (env) $ echo $WORKOS_API_KEY
-   (env) $ echo $DIRECTORY_ID
+   (env) $ echo $WORKOS_PROJECT_ID
    ```
 
-10. Run the Django migrations. Again, ensure you're in the `python-django-directory-sync-example/` directory where the `manange.py` file is.
+10. Run the Django migrations. Again, ensure you're in the `magic_link_example/` directory where the `manange.py` file is.
   ```bash
   (env) $ python3 manage.py migrate
   ```
