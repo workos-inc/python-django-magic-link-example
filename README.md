@@ -91,9 +91,14 @@ A basic Django app that uses the [WorkOS Python SDK](https://github.com/workos-i
   . . .
   ```
 
+11. Update the default redirect URI in your WorkOS Dashboard
+
+   To configure the page where the user will be redirected after logging in with the Magic Link you'll need to set the default redirect_uri to http://localhost:8000/success. 
+
+
 ## Start the server
 
-11. Start the server.
+12. Start the server.
   
   To serve static files in development while still having `debug=True` in settings.py to able to send requests to WorkOS, be sure to include the `--insecure` flag when starting the server locally.
   ```bash
@@ -113,7 +118,7 @@ A basic Django app that uses the [WorkOS Python SDK](https://github.com/workos-i
   Quit the server with CONTROL-C.
   ```
 
-2. Once the server is running, navigate to http://localhost:8000 to view the home page of the app where you can enter the email you'd like to send a Magic Link to. The app will send a Magic Link to the submitted email and also bring you to a page which also has the magic link included. Click on the link and you'll be logged in!
+13. Once the server is running, navigate to http://localhost:8000 to view the home page of the app where you can enter the email you'd like to send a Magic Link to. The app will send a Magic Link to the submitted email and also bring you to a page which also has the magic link included. Click on the link and you'll be logged in!
 
 ## Need help?
 
